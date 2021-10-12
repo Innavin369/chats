@@ -1,0 +1,29 @@
+.chat-container {
+  width: 100%;
+  background-color: pink;
+  border-left: 1px solid black;
+}
+.massage {
+  margin-bottom: 10px;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.left {
+  margin-right: 10px;
+  background-color: var(--user-massages-bg-color);
+  color:var(--dark-text-color);
+}
+.right {
+  margin-left: 10px;
+  background-color: var(--sender-massages-bg-color);
+  color:var(--main-text-color);
+}
+.text-left {
+  text-align: start;
+}
+.text-right {
+  text-align: end;
+}
+.history {
+  margin-bottom: 20px;
+}

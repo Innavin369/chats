@@ -1,0 +1,24 @@
+<div class="list-container">
+
+  <div  class="sidebar">
+    <list-header></list-header>
+    <h1 class="chats">Chats</h1>
+    <ul class="friends-list">
+      <li class="friend"
+          *ngFor="let user of users"
+          [class.selected]="user === selectedUser"
+
+          (click)="onSelect(user)">
+
+        <user [user]="user"></user>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container chat-container">
+    <chat [user]="selectedUser"></chat>
+    <app-input></app-input>
+  </div>
+
+</div>
+

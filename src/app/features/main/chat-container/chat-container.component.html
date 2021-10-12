@@ -1,0 +1,22 @@
+<!--<div class="container chat-container">-->
+<list-header></list-header>
+<div *ngIf="user">
+  <h5>{{user.firstName | uppercase}} Details</h5>
+  <div><span>id: </span>{{user.id}}</div>
+  <ul>
+    <li class="history" *ngFor="let history of user.chatingHistory">
+      <div class="massage"
+           [ngClass]="{'left': history.userId === user.id,
+            'right' : history.userId !== user.id }">
+        {{ history.text }}
+      </div>
+      <div [ngClass]="{'text-left': history.userId === user.id,
+            'text-right' : history.userId !== user.id }">
+        {{ history.time | date:'short' }}
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!user || user.chatingHistory.length === 0">You do`nt have a massage yet!</div>
+<!--</div>-->

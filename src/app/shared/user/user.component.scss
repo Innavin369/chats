@@ -1,0 +1,42 @@
+.link {
+  //display: flex;
+  cursor: pointer;
+}
+.user-wrap {
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.image {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.user-icon {
+  position: relative;
+  border-radius: 50%;
+
+}
+.user-icon::after{
+  content:"";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--icon-color);
+  background-image: url(../../../assets/images/done.svg);
+}
+.date {
+  margin-left: auto;
+}
+

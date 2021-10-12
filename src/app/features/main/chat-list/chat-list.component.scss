@@ -1,0 +1,29 @@
+.list-container {
+  display: flex;
+  width: 100%;
+  background-color: var(--chat-bg-color);
+}
+
+.sidebar {
+  width: 450px;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  border-left: 1px solid black;
+}
+
+.chats {
+  color: var(--chats-color);
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+li.selected {
+  background-color:var(--selected-color);
+}
+
+

@@ -1,0 +1,6 @@
+<div class="user-wrap link" (click)="dropId()">
+  <div class="image" [ngStyle]="{backgroundImage:'url('+ user.image +')'}"></div>
+  <p> {{ user.firstName }} {{ user.lastName }} </p>
+  <p class="date">{{ user.lastVisit | date: 'MMM d, y' }} </p>
+</div>
+
